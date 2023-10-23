@@ -1,7 +1,7 @@
 #1
 
-def square_sum(numbers):
-    return sum(x ** 2 for x in numbers)
+def solution(nums):
+    return sorted(nums) if nums else []
 
 #2
 
@@ -12,13 +12,8 @@ repeat_str(3, 'loh')
 
 #3
 
-def grow(arr):
-    if (arr != 0):
-        result = 1
-        for i in arr:
-            result = result * i
-            
-        return result
+def make_upper_case(strng):
+    return strng.upper()
 
 #4
 
@@ -44,13 +39,8 @@ def get_grade(s1, s2, s3):
 
 #6
 
-def rps(p1, p2):
-    rsp = {'rock': 'scissors', 'scissors': 'paper', 'paper': 'rock'}
-    if rsp[p1] == p2:
-        return "Player 1 won!"
-    if rsp[p2] == p1:
-        return "Player 2 won!"
-    return "Draw!"
+def small_enough(array, limit):
+    return max(array)<=limit
 
 #7
 
@@ -78,5 +68,5 @@ def area_or_perimeter(l , w):
 
 #10
 
-def string_to_number(s):
-    return int(s)
+def square(n):
+    return n ** 2
