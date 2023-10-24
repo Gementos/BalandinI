@@ -1,33 +1,17 @@
 #1
 
-def find_average(array):
-    return sum(array) / len(array) if array else 0
+def hex_to_dec(s):
+    return int(s, 16)
 
 #2
 
-def bmi(weight, height):
-    bmi = weight / (height ** 2)
-    
-    if bmi <= 18.5 :
-        return "Underweight"
-    elif bmi <= 25.0:
-        return "Normal"
-    elif bmi <= 30.0:
-        return "Overweight"
-    elif bmi > 30:
-        return "Obese"
+def greet():
+    return "hello world!"
 
 #3
 
-def update_light(current):
-    if current == "green":
-        return "yellow"
-    elif current == "yellow":
-        return "red"
-    elif current == "red":
-        return "green"
-    else:
-        return "This is not a traffic light color."
+def positive_sum(arr):
+    return sum(x for x in arr if x > 0)
 
 #4
 
@@ -36,16 +20,8 @@ def make_negative( number ):
 
 #5
 
-def quarter_of(month):
-  
-    if month in range(1, 4):
-        return 1
-    elif month in range(4, 7):
-        return 2
-    elif month in range(7, 10):
-        return 3
-    elif month in range(10, 13):
-        return 4
+def findSmallestInt(arr):
+    return min(arr)
 
 #6
 
@@ -66,15 +42,8 @@ def remove_char(s):
 
 #9
 
-def basic_op(operator, value1, value2):
-    if operator == "+":
-        return value1 + value2
-    elif operator == "-":
-        return value1 - value2
-    elif operator == "*":
-        return value1 * value2
-    elif operator == "/":
-        return value1 / value2
+def digitize(n):
+    return [int(x) for x in str(n)[::-1]]
 
 #10
 
