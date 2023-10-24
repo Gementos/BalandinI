@@ -1,26 +1,17 @@
 1#1
 
-def fake_bin(x):
-    if int(x) >= 5:
-        return 1
-    else:
-        return 0
+def unusual_five():
+    return len("five!")
 
 #2
 
-def simple_multiplication(number) :
-    if number % 2 == 0:
-        return number * 8
-    else:
-        return number * 9
+def double_char(s):
+    return ''.join(c * 2 for c in s)
 
 #3
 
-def zero_fuel(distance_to_pump, mpg, fuel_left):
-    if distance_to_pump / mpg <= fuel_left:
-        return True 
-    else:
-        return False
+def is_anagram(test, original):
+    return sorted(original.lower()) == sorted(test.lower()) 
 
 #4
 
@@ -37,17 +28,13 @@ def paperwork(n, m):
 
 #6
 
-def check(seq, elem):
-    return elem in seq
+def solution(str):
+  return str[::-1]
 
 #7
 
-def count_sheeps(sheep):
-    x = 0
-    for i in sheep:
-        if i == True:
-            x = x + 1
-    return x
+def string_to_array(s):
+    return s.split(' ')
 
 #8
 
@@ -62,10 +49,15 @@ def find_short(s):
 
 #9
 
-def string_to_array(s):
-    return s.split(' ')
+def sum_mix(arr):
+    return sum(int(i) for i in arr)
 
 #10
 
-def sum_mix(arr):
-    return sum(int(i) for i in arr)
+def count_sheeps(sheep):
+    x = 0
+    for i in sheep:
+        if i == True:
+            x = x + 1
+    return x
+
